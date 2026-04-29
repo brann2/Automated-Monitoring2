@@ -20,13 +20,13 @@ def get_gemini_analysis(log_text):
         return f"⚠️ Gagal mendapatkan analisis dari Gemini: {e}"
 
 def send_whatsapp(message):
-    token = "Token_Fonnte"
+    token = "x3vvW1yumt73A9NsJZgi"
     payload = {
         "target": "081316446453",
         "message": message,
     }
     headers = {"Authorization": token}
-    r = requests.post("x3vvW1yumt73A9NsJZgi", data=payload, headers=headers)
+    r = requests.post("https://api.fonnte.com/send", data=payload, headers=headers)
     return r.status_code
 
 # Eksekusi semua
